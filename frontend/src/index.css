@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: #5B0C39;
+  --secondary-color: #E5791E;
+  --secondary-color-hover: #ca6716;
+  --background-color: #191919;
+  --box-login: #0F0F0F;
+  --box-de-texto: #4E4E4E;
+  --calendario-background: #363636;
+  --calendario-color: #AAAAAA;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--background-color);
+  color: #fff;
+}
+
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #333;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #777;
+  border-radius: 20px;
+}
+
+input, button, select, textarea, a {
+  outline: none !important;
+}
+
+textarea {
+  resize: none;
+  font-family: 'Inter', sans-serif;
+}
+
+ul, li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#toast-validacao {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 1rem;
+}
+
+#toast-validacao .Toastify__toast-body button {
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.5rem 2rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+#toast-validacao .Toastify__toast-body button:hover {
+  filter: brightness(0.9);
+}
+
+#toast-validacao .Toastify__toast-body button:first-child {
+  background: #666;
+}
+
+.toast-validacao-center {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
